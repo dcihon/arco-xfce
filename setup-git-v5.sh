@@ -55,9 +55,9 @@ echo
 #https://blog.nillsf.com/index.php/2021/05/27/github-sso-using-password-protected-ssh-keys
 
 project=$(basename `pwd`)
-githubdir=$(basename $(dirname "$PWD" | tr '[:upper:]' '[:lower:]'))
+#githubdir=$(basename $(dirname "$PWD" | tr '[:upper:]' '[:lower:]'))
 echo "-----------------------------------------------------------------------------"
-echo "this is project https://github.com/$project"
+echo "this is project https://github.com/dcihon/"$project
 echo "-----------------------------------------------------------------------------"
 
 git config --global pull.rebase false
@@ -68,7 +68,7 @@ sudo git config --system core.editor nano
 #git config --global credential.helper cache
 #git config --global credential.helper 'cache --timeout=32000'
 
-git remote set-url origin git@github.com:$project
+git remote set-url origin git@github.com:dcihon/$project
 
 echo
 tput setaf 3

@@ -30,9 +30,6 @@
 # reset - commit your changes or stash them before you merge
 # git reset --hard - personal alias - grh
 
-echo "Deleting the work folder if one exists"
-[ -d work ] && rm -rf work
-
 # checking if I have the latest files from github
 echo "Checking for newer files online first"
 git pull
