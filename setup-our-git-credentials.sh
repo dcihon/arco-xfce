@@ -57,7 +57,7 @@ echo
 project=$(basename `pwd`)
 githubdir=$(basename $(dirname "$PWD" | tr '[:upper:]' '[:lower:]'))
 echo "-----------------------------------------------------------------------------"
-echo "this is project https://github.com/$githubdir/$project"
+echo "this is project https://github.com/$project"
 echo "-----------------------------------------------------------------------------"
 
 git config --global pull.rebase false
@@ -68,7 +68,7 @@ sudo git config --system core.editor nano
 #git config --global credential.helper cache
 #git config --global credential.helper 'cache --timeout=32000'
 
-git remote set-url origin git@github.com:$githubdir/$project
+git remote set-url origin git@github.com:$project
 
 echo
 tput setaf 3
